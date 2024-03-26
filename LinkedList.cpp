@@ -1,3 +1,5 @@
+// Commited 2
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -8,19 +10,20 @@ struct LKNode{
     LKNode * next;
 }*head;
 
-void initLKList(LKNode *head,int val=0){
-    head = (LKNode *)malloc(sizeof(LKNode));
-    head->val = val;
-    head->next = nullptr;
+void initLKList(LKNode *node,int val=0){
+    node = (LKNode *)malloc(sizeof(LKNode));
+    node->val = val;
+    node->next = nullptr;
 }
 
-void insertElem(LKNode *head,int a){
+void backInsert(LKNode *head,int a){
     LKNode * temp; initLKList(temp,a);
     LKNode * p = head;
     while(p != nullptr){
         p = p->next;
     }
     p->next = temp;
+    head->val++;
 }
 
 void printLKList(LKNode *head){
@@ -31,6 +34,8 @@ void printLKList(LKNode *head){
     }
     cout<<endl;
 }
+
+int getLength(LKNode *head)return head->val;
 
 
 int main(){
