@@ -1,4 +1,4 @@
-// Commited 2
+
 
 #include <bits/stdc++.h>
 
@@ -35,8 +35,9 @@ void printLKList(LKNode *head){
     cout<<endl;
 }
 
-int getLength(LKNode *head)return head->val;
-
+int getLength(LKNode *head){
+    return head->val;
+}
 
 int main(){
     cout<<"hellow";
