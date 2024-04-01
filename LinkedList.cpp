@@ -40,7 +40,7 @@ int getLength(LKNode *head){
 }
 
 int main(){
-    cout<<"hellow";
+    cout<<"Genshin ready";
     return 0;
 
 }

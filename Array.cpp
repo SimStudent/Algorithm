@@ -21,6 +21,7 @@ int removeDuplicates(vector<int>& nums) {
         prev = nums[index];
     }
     return nums.size();
+}
 
 int removeDuplicates_2(vector<int>& nums) {
     int slow = 0, fast = 0;
@@ -52,7 +53,8 @@ int removeElement(vector<int>& nums, int val) {
 int removeElement_2(vector<int>& nums, int val) { 
         int index = 0;
         for (int i = 0; i < nums.length; i++) {  // for循环的 i 本质上也是双指针
-            if (nums[i] == val) {
+            if (nums[i] == val) 
+            {
                 continue;
             }
             nums[index] = nums[i];
