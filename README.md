@@ -1,2 +1,2 @@
 # Algorithm
-This repository save the algorithm I have written.
+This repository save the algorithm I have studied and written.
